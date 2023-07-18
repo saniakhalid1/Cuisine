@@ -1,0 +1,57 @@
+@font-face {
+    font-family: Poppins;
+    src:  url('PoppinsMedium.ttf');
+}
+@font-face {
+    font-family: Raleway;
+    src: url('Raleway-Medium.ttf'), url('Raleway-Regular.ttf'), url('Raleway-SemiBold.ttf');
+}
+html{
+    font-size: 10px;
+    overflow-x: hidden;
+}
+:root{
+    --green-1:#26643b;
+    --green-2:#a2de96;
+    --lightgreen-1:#d6e5d8;
+    --lightgreen-2:#f5fcf4;
+    --black-1:#3b413a;
+    --black-2:#3f3c3f;
+    --black-3:#5b6359;
+    --white-1:#e8e8e8;
+}
+body{
+    background-color: var(--lightgreen-2);
+    overflow: hidden;  
+}
+section{
+    padding: 100px 0px;
+}
+@media only screen and (max-width:786px){
+    section{
+        padding: 50px 0;
+    }
+}
+.container{
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+h1,h2,h3,h4{
+    font-family:'Poppins',sans-serif;
+}
+p{
+    font-family: 'Raleway',sans-serif;
+    font-weight: 400;
+    line-height: 1.4em;
+    font-size: 1.8rem;
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+}

@@ -1,0 +1,120 @@
+/*Hero Section Styles */
+.hero__wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column-reverse;
+    gap: 5rem;
+}
+.hero__left__wrapper{
+    max-width: 360px;
+}
+.hero__img__wrapper{
+    max-width: 400px; 
+    width: 80%;
+    margin: 0 auto;
+}
+.hero__heading{
+    font-family: Poppins, sans-serif;
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 1.4rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: var(--black-1);
+}
+.hero__info{
+    text-align: center;
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+    color: var(--black-2);
+}
+.button__wrapper{
+    text-align: center;
+}
+@media only screen and (min-width:786px){
+    .hero__wrapper{
+        flex-direction: row;
+        gap: 0;
+    }
+    .hero__left{
+        flex: 3;
+    }
+    .hero__right{
+        flex: 4;
+    }
+    .hero__heading{
+        font-size: 3rem;
+        text-align: left;
+        margin-bottom: 3rem;
+    }
+    .hero__info{
+        margin-bottom: 2rem;
+        text-align: left;
+        font-size: 1.6rem;
+    }
+    .button__wrapper{
+        text-align: left;
+    }
+    .hero__img__wrapper{
+        max-width: none;
+        width: 90%;
+    }
+}
+/*Our Specials Section Styles*/
+#ourSpecials{
+    padding-top: 10rem;
+}
+.ourSpecials__wrapper{
+    display: flex;
+    flex-direction:column;
+    gap: 3rem;
+}
+.ourSpecials__left{
+    display: flex;
+    gap: 1rem;
+}
+.ourSpecials__item1{
+    flex: 2;
+}
+.ourSpecials__item2{
+    flex:2;
+}
+.ourSpecials__item1,
+.ourSpecials__item2{
+    background-color: var(--lightgreen-1);
+    padding: 1.2rem;
+    padding-top: 5rem;
+    border-radius: 12px;
+    margin: 0 auto;
+}.ourSpecials__item__img{
+    margin-top: calc(-20%);
+    margin-bottom: 2rem;
+    border-radius: 12px;
+    height: 150px;
+    overflow: hidden;
+}
+.ourSpecials__item__img img{
+    object-fit: cover;
+}
+.ourSpecials__item__title{
+    font-size: 1.4rem;
+    color: var(--black-1);
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+.ourSpecials__item__price{
+    color: var(--green-1);
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}.ourSpecials__item__star{
+    width: max-content;
+    height: 1.4rem;
+    margin-bottom: 1rem;
+}
+.ourSpecials__item__text{
+    font-size: 1.4rem;
+    color: var(--black-2);
+    font-weight: 500;
+}
